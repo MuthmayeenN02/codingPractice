@@ -19,7 +19,8 @@ public class Main
 		    boolean isEqual = Arrays.equals(c1, c2);
 		    if (isEqual == true){
 		        System.out.println(str1 + " and " + str2 + " are anagram");
-	    	}else{
+	    	}
+		else{
 		        System.out.println(str1 + " and " + str2 + " are not anagram");
 	    	}
 		}
