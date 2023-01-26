@@ -31,3 +31,55 @@ public class Main
 // Ball
 // Llab
 // Ball and Llab are anagram
+
+
+// Python
+
+class Solution:
+    def isAnagram(self, a, b):
+        if sorted(a) == sorted(b):
+            return True
+        else:
+            return False
+if __name__ == '__main__':
+    a = "Gram"
+    b = "armg"
+    a.lower()
+    b.lower()
+    if(Solution().isAnagram(a, b)):
+      print("The two strings are anagram of each other")
+    else:
+      print("The two strings are not anagram of each other")
+
+// C+
+#include <bits/stdc++.h>
+using namespace std;
+bool areAnagram(string str1, string str2)
+{
+    int n1 = str1.length();
+    int n2 = str2.length();
+    if (n1 != n2)
+        return false;s
+    sort(str1.begin(), str1.end());
+    sort(str2.begin(), str2.end());
+    for (int i = 0; i < n1; i++)
+        if (str1[i] != str2[i])
+            return false;
+ 
+    return true;
+}
+ 
+// Driver code
+int main()
+{
+    string str1 = "gram";
+    string str2 = "arm";
+    // Function Call
+    if (areAnagram(str1, str2))
+        cout << "The two strings are anagram of each other";
+    else
+        cout << "The two strings are not anagram of each "
+                "other";
+ 
+    return 0;
+}
