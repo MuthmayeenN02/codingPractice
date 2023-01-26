@@ -26,3 +26,39 @@ class HelloWorld {
 // Is abc palindrom?: false
 // Is bbbb palindrom?: true
 // Is defg palindrom?: false
+
+
+// Python
+ 
+def isPalindrome(s):
+    return s == s[::-1]
+ 
+ 
+# Driver code
+s = "malayalam"
+ans = isPalindrome(s)
+print(ans)
+        
+// C++
+#include <iostream>
+using namespace std;
+string isPalindrome(string S)
+{
+    string P = S;
+    reverse(P.begin(), P.end());
+    if (S == P) {
+        return "Yes";
+    }
+    else {
+        return "No";
+    }
+}
+ 
+// Driver Code
+int main()
+{
+    string S = "ABCDCBA";
+    cout << isPalindrome(S);
+ 
+    return 0;
+}
